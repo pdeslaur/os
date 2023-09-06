@@ -39,6 +39,8 @@ pipeline:
       export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
       export CC=gcc-6.5 CXX=g++-6.5
 
+
+
       EMBED_LABEL=${{package.version}}-${{package.epoch}} \
         EXTRA_BAZEL_ARGS=--tool_java_runtime_version=local_jdk \
         ./compile.sh
